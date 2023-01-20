@@ -23,7 +23,7 @@ if(${catkin_FOUND})
   find_package(Poco REQUIRED COMPONENTS Foundation)
   catkin_package(
     INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME} ${Poco_LIBRARIES}
+    LIBRARIES ${PROJECT_NAME} ${Poco_LIBRARIES} ${console_bridge_LIBRARIES}
     DEPENDS Boost Poco console_bridge
     CFG_EXTRAS class_loader-extras.cmake
   )
